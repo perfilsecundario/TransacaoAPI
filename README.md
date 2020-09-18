@@ -79,7 +79,7 @@ Este endpoint retorna estatísticas das transações que OCORRERAM NO ÚLTIMO MI
      "max": 123.56 
     } 
     
-  Estas estatísticas são geradas automaticamente pe objeto DoubleSummaryStatistics do Java 8+. 
+  Estas estatísticas são geradas automaticamente pelo objeto DoubleSummaryStatistics do Java 8+. 
 
 
 
