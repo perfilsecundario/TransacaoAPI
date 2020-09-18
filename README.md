@@ -69,13 +69,14 @@ ________________________________________________________________________________
 
 
 
-Restrições sob o Sistema/API 
+Restrições sob o Sistema/API
 
-    1. Este sistema NÃO utiliza nenhum outro sistema ou biblioteca de amazenamento de dados (por exemplo: H2, SQLite, MongoDB, etc.) ou Cache
-    (Redis, Infinispan, Memcached, Ehcache, etc.);  
-    2. Esta API aceita e responder APENAS objetos JSON;  
-    3. Este sistema TEM testes: unitário e de integração;  
-    4. A saúde da API pode ser avaliada em http://localhost:8080/actuator.
+   1. Este sistema NÃO utiliza nenhum outro sistema ou biblioteca de amazenamento de dados por exemplo: H2, SQLite, MongoDB, etc.) ou Cache (Redis, Infinispan, Memcached,             Ehcache, etc.);  
+   2. Esta API aceita e responder APENAS objetos JSON;  
+   3. Este sistema TEM testes: unitário e de integração;  
+   4. A saúde da API pode ser avaliada em http://localhost:8080/actuator.
+
+
 
 
 
