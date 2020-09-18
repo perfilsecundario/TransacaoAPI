@@ -19,6 +19,12 @@ DOCUMENTAÇÃO:
 http://localhost:8080/swagger-ui.html
 
 
+
+
+__________________________________________________________________________________________________________________________________________________
+
+
+
 ESCLARECIMENTO: MÉTODO GET E SUAS ESTATÍSTICAS
 
 AS TRANSAÇÕES NO PASSADO NÃO SÃO TRAZIDAS PELO GET, somente as transações cuja data é o minuto atual são apresentadas na requisição get. 
