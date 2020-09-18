@@ -81,7 +81,9 @@ ________________________________________________________________________________
 3. GET /estatistica 
 
 
-    Este endpoint retorna estatísticas das transações que aconteceram apenas no último minuto. A resposta retorna da seguinte forma: 
+  Este endpoint retorna estatísticas das transações que OCORRERAM NO ÚLTIMO MINUTO, as transações ocorridas no passado são recebidas, porém seus dados não geram           estatísticas. 
+
+  A resposta retorna da seguinte forma: 
     
     { 
      "count": 10,  
@@ -91,9 +93,8 @@ ________________________________________________________________________________
      "max": 123.56 
     } 
     
-    Estas estatísticas são geradas automaticamente pe objeto DoubleSummaryStatistics do Java 8+. 
+  Estas estatísticas são geradas automaticamente pe objeto DoubleSummaryStatistics do Java 8+. 
 
-  *** AS TRANSAÇÕES NO PASSADO NÃO SÃO TRAZIDAS PELO GET, somente as transações cuja data é o minuto atual são apresentadas na requisição get.
 
 
 
