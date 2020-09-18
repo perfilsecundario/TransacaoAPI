@@ -13,7 +13,7 @@ SOBRE:
 
 API REST que recebe Transações e dá estatísticas sob essas transações. A API foi criada utilizando-se de Java e Spring Boot.
 
-Esta API foi idealizada com arquitetura Hexagonal, e alguns princícios de Clean Code e SOLID.
+Esta API foi idealizada com arquitetura Hexagonal, e alguns princípios de Clean Code e SOLID.
  
 DOCUMENTAÇÃO:
 http://localhost:8080/swagger-ui.html
@@ -28,12 +28,14 @@ DETALHES:
 
 
 1. POST /transacao 
-      Este é o endpoint que irá receber as Transações. Cada transação consiste de um valor e  uma dataHora de quando ela aconteceu (campos obrigatórios): 
+      Este é o endpoint que irá receber as Transações. Cada transação consiste de um valor e uma dataHora de quando ela aconteceu (campos obrigatórios), ex: 
       
       { 
        "valor": 123.45, 
        "dataHora": "2020-08-07T10:11:12.000Z" 
       } 
+
+
 
       Restrições e Domínio 
       
