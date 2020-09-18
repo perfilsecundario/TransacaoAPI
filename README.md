@@ -20,20 +20,6 @@ http://localhost:8080/swagger-ui.html
 
 
 
-
-__________________________________________________________________________________________________________________________________________________
-
-
-
-ESCLARECIMENTO: MÉTODO GET E SUAS ESTATÍSTICAS
-
-AS TRANSAÇÕES NO PASSADO NÃO SÃO TRAZIDAS PELO GET, somente as transações cuja data é o minuto atual são apresentadas na requisição get. 
-
-Este comportamento é resultado de uma  interpretação da regra de negócios, onde não foi entendido que: as transações ocorridas no passado, mas inseridas agora, deveriam ser apresentadas. 
-
-Válido frisar que, não há erro na funcionalidade do método ou na lógica de programação. Mas somente uma divergencia interpretativa sobre a regra de negócio. O comportamento deste método pode ser facilmentente modificado caso necessário.
-
-
 __________________________________________________________________________________________________________________________________________________
 
 DETALHES:
@@ -81,7 +67,7 @@ ________________________________________________________________________________
 3. GET /estatistica 
 
 
-  Este endpoint retorna estatísticas das transações que OCORRERAM NO ÚLTIMO MINUTO, as transações ocorridas no passado são recebidas, porém seus dados não geram           estatísticas. 
+Este endpoint retorna estatísticas das transações que OCORRERAM NO ÚLTIMO MINUTO, as transações ocorridas no passado são recebidas, porém seus dados não geram           estatísticas. 
 
   A resposta retorna da seguinte forma: 
     
@@ -97,7 +83,6 @@ ________________________________________________________________________________
 
 
 
-
 ___________________________________________________________________________________________________________________________________________________
 
 
@@ -107,7 +92,7 @@ Restrições sob o Sistema/API
    1. Este sistema NÃO utiliza nenhum outro sistema ou biblioteca de amazenamento de dados por exemplo: H2, SQLite, MongoDB, etc.) ou Cache (Redis, Infinispan, Memcached,             Ehcache, etc.);  
    2. Esta API aceita e responder APENAS objetos JSON;  
    3. Este sistema TEM testes: unitário e de integração;  
-   4. A saúde da API pode ser avaliada em http://localhost:8080/actuator.
+   4. A métricas da API (como sua saúde), podem ser verificadas em http://localhost:8080/actuator.
 
 
 
