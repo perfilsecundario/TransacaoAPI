@@ -1,8 +1,8 @@
 
 springAPI
-=======
+
 # transacaoSpring
->>>>>>> branch 'master' of https://github.com/perfilsecundario/transacaoSpring
+branch 'master' of https://github.com/perfilsecundario/transacaoSpring
 
 
 SOBRE:
