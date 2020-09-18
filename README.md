@@ -19,13 +19,18 @@ DOCUMENTAÇÃO:
 http://localhost:8080/swagger-ui.html
 
 
+ESCLARECIMENTO: MÉTODO GET E SUAS ESTATÍSTICAS
 
+AS TRANSAÇÕES NO PASSADO NÃO SÃO TRAZIDAS PELO GET, somente as transações cuja data é o minuto atual são apresentadas na requisição get. 
+
+Este comportamento é resultado de uma  interpretação da regra de negócios, onde não foi entendido que: as transações ocorridas no passado, mas inseridas agora, deveriam ser apresentadas. 
+
+Válido frisar que, não há erro na funcionalidade do método ou na lógica de programação. Mas somente uma divergencia interpretativa sobre a regra de negócio. O comportamento deste método pode ser facilmentente modificado caso necessário.
 
 
 __________________________________________________________________________________________________________________________________________________
 
 DETALHES:
-
 
 
 
@@ -45,7 +50,7 @@ DETALHES:
       • Uma requisição com um corpo JSON inválido gera uma resposta 400 Bad Request sem nenhum corpo;
       • Toda transação DEVE ter valor e dataHora;  
       • Uma transação NÃO DEVE acontecer no futuro;  
-      • Uma transação DEVE ter acontecido a qualquer momento no passado;  
+      • Uma transação  ter acontecido a qualquer momento no passado ou no presente; 
       • Uma transação NÃO DEVE ter valor negativo;  
       • Uma transação DEVE ter valor igual ou maior que 0 (zero).
       
@@ -69,6 +74,7 @@ ________________________________________________________________________________
     
 3. GET /estatistica 
 
+
     Este endpoint retorna estatísticas das transações que aconteceram apenas no último minuto. A resposta retorna da seguinte forma: 
     
     { 
@@ -81,7 +87,7 @@ ________________________________________________________________________________
     
     Estas estatísticas são geradas automaticamente pe objeto DoubleSummaryStatistics do Java 8+. 
 
-
+  *** AS TRANSAÇÕES NO PASSADO NÃO SÃO TRAZIDAS PELO GET, somente as transações cuja data é o minuto atual são apresentadas na requisição get.
 
 
 
