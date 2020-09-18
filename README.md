@@ -5,6 +5,10 @@ springAPI
 branch 'master' of https://github.com/perfilsecundario/transacaoSpring
 
 
+
+
+
+
 SOBRE:
 
 API REST que recebe Transações e dá estatísticas sob essas transações. A API foi criada utilizando-se de Java e Spring Boot.
@@ -16,9 +20,14 @@ http://localhost:8080/swagger-ui.html
 
 
 
-Detalhes:
+
 
 __________________________________________________________________________________________________________________________________________________
+
+DETALHES:
+
+
+
 
 
 1. POST /transacao 
@@ -40,15 +49,23 @@ ________________________________________________________________________________
       • Uma transação NÃO DEVE ter valor negativo;  
       • Uma transação DEVE ter valor igual ou maior que 0 (zero).
       
+      
+      
 ___________________________________________________________________________________________________________________________________________________      
+
+
 
 
 2. DELETE /transacao 
 
       Esta requisição simplesmente apaga todos os dados de transação que estejam armazenados. 
       
+
+
 ___________________________________________________________________________________________________________________________________________________
         
+    
+    
     
 3. GET /estatistica 
 
@@ -63,6 +80,9 @@ ________________________________________________________________________________
     } 
     
     Estas estatísticas são geradas automaticamente pe objeto DoubleSummaryStatistics do Java 8+. 
+
+
+
 
 
 ___________________________________________________________________________________________________________________________________________________
